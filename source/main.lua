@@ -7,8 +7,13 @@ import "entities/player"
 import "entities/knight"
 import "entities/giant"
 
+import "source/scripts/signal/signal"
+
 local pd <const> = playdate
 local gfx <const> = playdate.graphics
+
+-- to make it work show be initiated here
+Signal = Signal()
 
 -- local function initialize()
 --     local knightImage = gfx.image.new("images/knight")
